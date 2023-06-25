@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <title>Ferox IT - Een managed hosting bedrijf</title>
     <link rel="stylesheet" href="dist/output.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf-Zn4bAAAAAPvdgieBMNeY5-bwKE0GrhMaxsuY"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -25,9 +29,9 @@
                 <a class="mr-5 hover:text-gray-900">Oplossingen</a>
                 <a class="mr-5 hover:text-gray-900">Web</a>
                 <a class="mr-5 hover:text-gray-900">Cloud</a>
-                <a class="mr-5 hover:text-gray-900">Over ons</a>
+                <!-- <a class="mr-5 hover:text-gray-900">Over ons</a> -->
             </nav>
-            <button
+            <button onclick='document.getElementById("contactmodal").classList.remove("hidden")'
                 class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact
                 opnemen
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -50,7 +54,8 @@
                     vraag.</p>
                 <div class="flex justify-center">
                     <button
-                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="document.getElementById('forwho').scrollIntoView()"><svg
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                        onclick="document.getElementById('forwho').scrollIntoView()"><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -64,7 +69,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
                         </svg>
-                        <span class="ml-1">Contact</span></button>
+                        <span onclick='document.getElementById("contactmodal").classList.remove("hidden")'
+                            class="ml-1">Contact</span></button>
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -89,7 +95,8 @@
                             <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Startup</h2>
                             <p class="leading-relaxed text-base">Wij zijn er voor startende ondernemers en bedrijven met
                                 advies en infrastructuur zodat jij zonder op jouw snelheid kan schalen.</p>
-                            <a class="mt-3 text-indigo-500 inline-flex items-center">Meer leren
+                            <a onclick='document.getElementById("contactmodal").classList.remove("hidden")'
+                                class="mt-3 text-indigo-500 inline-flex items-center cursor-pointer">Contact
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -113,7 +120,8 @@
                             <p class="leading-relaxed text-base">Ook voor het MKB hebben wij alles in huis. Wij kunnen u
                                 helpen met het opzetten van een webshop of het runnen van die veel te oude ERP software.
                             </p>
-                            <a class="mt-3 text-indigo-500 inline-flex items-center">Meer leren
+                            <a onclick='document.getElementById("contactmodal").classList.remove("hidden")'
+                                class="mt-3 text-indigo-500 inline-flex items-center cursor-pointer">Contact
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -139,7 +147,8 @@
                             <p class="leading-relaxed text-base">Zoekt uw bedrijf een betrouwbare IT partner voor een
                                 nieuwe applicatie of het hosten van uw cloud-systemen? Dan bent u aan het juiste adres.
                             </p>
-                            <a class="mt-3 text-indigo-500 inline-flex items-center">Meer leren
+                            <a onclick='document.getElementById("contactmodal").classList.remove("hidden")'
+                                class="mt-3 text-indigo-500 inline-flex items-center cursor-pointer">Contact
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -154,102 +163,116 @@
 
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-            <div class="w-full sm:p-4 px-4 mb-6">
-              <h1 class="title-font font-medium text-xl mb-2 text-gray-900">We zijn er om te blijven</h1>
-              <div class="leading-relaxed">Met jaren ervaring in de game markt zijn wij er nu ook voor bedrijven. En we gaan niet weg.</div>
+            <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+                <div class="w-full sm:p-4 px-4 mb-6">
+                    <h1 class="title-font font-medium text-xl mb-2 text-gray-900">We zijn er om te blijven</h1>
+                    <div class="leading-relaxed">Met jaren ervaring in de game markt zijn wij er nu ook voor bedrijven.
+                        En we gaan niet weg.</div>
+                </div>
+                <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium text-3xl text-gray-900">>10K</h2>
+                    <p class="leading-relaxed">Klanten</p>
+                </div>
+                <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium text-3xl text-gray-900">>1K</h2>
+                    <p class="leading-relaxed">Actieve diensten</p>
+                </div>
+                <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium text-3xl text-gray-900">9.8/10</h2>
+                    <p class="leading-relaxed">Klanttevredenheid</p>
+                </div>
+                <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                    <h2 class="title-font font-medium text-3xl text-gray-900">68</h2>
+                    <p class="leading-relaxed">Landen</p>
+                </div>
             </div>
-            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-              <h2 class="title-font font-medium text-3xl text-gray-900">>10K</h2>
-              <p class="leading-relaxed">Klanten</p>
+            <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+                <img class="object-cover object-center w-full h-full" src="/img/dc.jpg" alt="stats">
             </div>
-            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-              <h2 class="title-font font-medium text-3xl text-gray-900">>1K</h2>
-              <p class="leading-relaxed">Actieve diensten</p>
-            </div>
-            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-              <h2 class="title-font font-medium text-3xl text-gray-900">9.8/10</h2>
-              <p class="leading-relaxed">Klanttevredenheid</p>
-            </div>
-            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
-              <h2 class="title-font font-medium text-3xl text-gray-900">68</h2>
-              <p class="leading-relaxed">Landen</p>
-            </div>
-          </div>
-          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-            <img class="object-cover object-center w-full h-full" src="/img/dc.jpg" alt="stats">
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font">
         <div class="mx-auto text-center pb-5">
-            <h2 class="text-3xl text-black">Hoe gaat dat?</h2>	
+            <h2 class="text-3xl text-black">Hoe gaat dat?</h2>
         </div>
         <div class="container px-5 py-6 mx-auto flex flex-wrap">
-          <div class="flex flex-wrap w-full">
-            <img class="lg:w-3/6 md:w-2/5 object-cover object-center rounded-lg md:mt-0 mt-12 flex-auto" src="/img/steps.jpg" alt="step">
-            <div class="lg:w-2/6 md:w-2/5 md:pr-10 md:py-6 lg:ml-3 flex-auto">
-              <div class="flex relative pb-10">
-                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            <div class="flex flex-wrap w-full">
+                <img class="lg:w-3/6 md:w-2/5 object-cover object-center rounded-lg md:mt-0 mt-12 flex-auto"
+                    src="/img/steps.jpg" alt="step">
+                <div class="lg:w-2/6 md:w-2/5 md:pr-10 md:py-6 lg:ml-3 flex-auto">
+                    <div class="flex relative pb-10">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 1</h2>
+                            <p class="leading-relaxed">Je neemt contact met ons op; We bespreken samen wat je zoekt en
+                                hoe wij daarmee kunnen helpen</p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-10">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <circle cx="12" cy="5" r="3"></circle>
+                                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 2</h2>
+                            <p class="leading-relaxed">We gaan aan de slag. Als we informatie van je nodig hebben laten
+                                we dit weten. We houden je goed op ge hoogte.</p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-10">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 3</h2>
+                            <p class="leading-relaxed">Als alles opgezet is spreken we elkaar weer om te kijken of je
+                                tevreden bent.</p>
+                        </div>
+                    </div>
+                    <div class="flex relative">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <path d="M22 4L12 14.01l-3-3"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Verder?</h2>
+                            <p class="leading-relaxed">IT verandert snel, en soms is er onderhoud nodig. Uiteraard
+                                regelen we dit gewoon voor je.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-                <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 1</h2>
-                  <p class="leading-relaxed">Je neemt contact met ons op; We bespreken samen wat je zoekt en hoe wij daarmee kunnen helpen</p>
-                </div>
-              </div>
-              <div class="flex relative pb-10">
-                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <circle cx="12" cy="5" r="3"></circle>
-                    <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                  </svg>
-                </div>
-                <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 2</h2>
-                  <p class="leading-relaxed">We gaan aan de slag. Als we informatie van je nodig hebben laten we dit weten. We houden je goed op ge hoogte.</p>
-                </div>
-              </div>
-              <div class="flex relative pb-10">
-                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 3</h2>
-                  <p class="leading-relaxed">Als alles opgezet is spreken we elkaar weer om te kijken of je tevreden bent.</p>
-                </div>
-              </div>
-              <div class="flex relative">
-                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                </div>
-                <div class="flex-grow pl-4">
-                  <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Verder?</h2>
-                  <p class="leading-relaxed">IT verandert snel, en soms is er onderhoud nodig. Uiteraard regelen we dit gewoon voor je.</p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
     <footer class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -293,6 +316,161 @@
             </span>
         </div>
     </footer>
+    <div id="contactmodal" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!--
+          Background backdrop, show/hide based on modal state.
+      
+          Entering: "ease-out duration-300"
+            From: "opacity-0"
+            To: "opacity-100"
+          Leaving: "ease-in duration-200"
+            From: "opacity-100"
+            To: "opacity-0"
+        -->
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <!--
+              Modal panel, show/hide based on modal state.
+      
+              Entering: "ease-out duration-300"
+                From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                To: "opacity-100 translate-y-0 sm:scale-100"
+              Leaving: "ease-in duration-200"
+                From: "opacity-100 translate-y-0 sm:scale-100"
+                To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            -->
+                <div
+                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                    <form onsubmit="onSubmit(this);return false;" action="/mailer.php">
+                        <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                            <div class="sm:flex sm:items-start">
+                                <div id="form-messages" class=""></div>
+                                <div
+                                    class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 sm:mx-0 sm:h-10 sm:w-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                    </svg>
+                                </div>
+                                <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                                    <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Contact
+                                    </h3>
+                                    <div class="mt-2">
+                                        <p class="text-sm text-gray-500">Vul de volgende velden in om contact op te
+                                            nemen,
+                                            of stuur een mailtje naar nieuw@feroxit.nl</p>
+                                        <div class="sm:col-span-4">
+                                            <label for="naam"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Naam</label>
+                                            <div class="mt-2">
+                                                <div
+                                                    class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                                                    <input type="text" name="naam" id="naam" autocomplete="given-name"
+                                                        class="block flex-1 border-0 bg-transparent py-1.5 pl-1 px-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                                        placeholder=" Jan Smidt" autofocus>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-4">
+                                            <label for="email"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Mail</label>
+                                            <div class="mt-2">
+                                                <div
+                                                    class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                                                    <input type="email" name="mal" id="mal" autocomplete="email"
+                                                        class="block flex-1 border-0 bg-transparent py-1.5 pl-1 px-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                                                        placeholder=" jij@jouwbedrijf.nl">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-span-full">
+                                            <label for="about"
+                                                class="block text-sm font-medium leading-6 text-gray-900">Bericht</label>
+                                            <div class="mt-2">
+                                                <textarea id="bericht" name="bericht" rows="3"
+                                                    class="block w-full rounded-md border-0 px-1.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                                            </div>
+                                            <p class="mt-3 text-sm leading-6 text-gray-600">Wie ben je? Waarmee kunnen
+                                                we je
+                                                helpen? Hoe heb je het liefste dat we je contacteren?</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                            <button type="submit"
+                                class="inline-flex w-full justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 sm:ml-3 sm:w-auto">Verzenden</button>
+                            <button onclick='document.getElementById("contactmodal").classList.add("hidden")'
+                                type="button"
+                                class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Sluiten</button>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Email *" value="fakeemail@gmail.com" style="opacity:0;">
+                        <textarea style="display:none" id="captchatoken" name="g-recaptcha-response"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function onSubmit(e) {
+            // Get the messages div.
+            var formMessages = $('#form-messages');
+            var form = $(e);
+
+            // Set up an event listener for the contact form.
+
+            // Stop the browser from submitting the form.
+
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6Lf-Zn4bAAAAAPvdgieBMNeY5-bwKE0GrhMaxsuY', {
+                    action: 'submit'
+                }).then(function (token) {
+                    console.log(token)
+                    document.getElementById('captchatoken').innerHTML = token;
+
+                    // Serialize the form data.
+                    var formData = $(form).serialize();
+                    // Submit the form using AJAX.
+                    $.ajax({
+                        type: 'POST',
+                        url: form.attr('action'), 
+                        data: formData
+                    })
+                        .done(function (response) {
+                            // Make sure that the formMessages div has the 'success' class.
+                            $(formMessages).removeClass('error');
+                            $(formMessages).addClass('success');
+
+                            // Set the message text.
+                            $(formMessages).text(response);
+
+                        })
+                        .fail(function (data) {
+                            // Make sure that the formMessages div has the 'error' class.
+                            $(formMessages).removeClass('success');
+                            $(formMessages).addClass('error');
+
+                            // Set the message text.
+                            if (data.responseText !== '') {
+                                $(formMessages).text(data.responseText);
+                            } else {
+                                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                            }
+                        });
+
+                });
+            });
+
+
+        }
+    </script>
 
 </body>
 
