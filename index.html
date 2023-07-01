@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -25,13 +26,13 @@
     </script>
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M 14.5962 13.454 a 5.6175 5.6175 90 0 1 -5.4677 6.9096 v -4.494 m 5.4677 -2.4155 a 14.0251 14.0251 90 0 0 5.7673 -11.3474 A 14.0251 14.0251 90 0 0 9.0171 7.8739 m 5.5801 5.5801 a 13.9745 13.9745 90 0 1 -5.4687 2.4155 m -0.1114 -7.9956 a 5.6175 5.6175 90 0 0 -6.9105 5.4677 h 4.494 m 2.4165 -5.4677 a 13.9755 13.9755 90 0 0 -2.4155 5.4677 m 2.5269 2.5279 c -0.0964 0.0197 -0.1938 0.0384 -0.2912 0.0562 a 14.1281 14.1281 90 0 1 -2.2919 -2.2919 a 13.9502 13.9502 90 0 1 0.0562 -0.2921 m -2.0972 2.2376 a 4.2066 4.2066 90 0 0 -1.645 4.0315 a 4.2066 4.2066 90 0 0 4.0315 -1.6459 M 15.4482 8.4263 a 1.4044 1.4044 90 1 1 -2.8088 0 a 1.4044 1.4044 90 0 1 2.8088 0 z" />
-                </svg>
-                <span class="ml-3 text-xl">Ferox IT</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M 14.5962 13.454 a 5.6175 5.6175 90 0 1 -5.4677 6.9096 v -4.494 m 5.4677 -2.4155 a 14.0251 14.0251 90 0 0 5.7673 -11.3474 A 14.0251 14.0251 90 0 0 9.0171 7.8739 m 5.5801 5.5801 a 13.9745 13.9745 90 0 1 -5.4687 2.4155 m -0.1114 -7.9956 a 5.6175 5.6175 90 0 0 -6.9105 5.4677 h 4.494 m 2.4165 -5.4677 a 13.9755 13.9755 90 0 0 -2.4155 5.4677 m 2.5269 2.5279 c -0.0964 0.0197 -0.1938 0.0384 -0.2912 0.0562 a 14.1281 14.1281 90 0 1 -2.2919 -2.2919 a 13.9502 13.9502 90 0 1 0.0562 -0.2921 m -2.0972 2.2376 a 4.2066 4.2066 90 0 0 -1.645 4.0315 a 4.2066 4.2066 90 0 0 4.0315 -1.6459 M 15.4482 8.4263 a 1.4044 1.4044 90 1 1 -2.8088 0 a 1.4044 1.4044 90 0 1 2.8088 0 z" />
+            </svg>
+            <span class="ml-3 text-xl">Ferox IT</span>
             </a>
             <nav
                 class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
@@ -78,8 +79,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
                         </svg>
-                        <span onclick='openmodal()'
-                            class="ml-1">Contact</span></button>
+                        <span onclick='openmodal()' class="ml-1">Contact</span></button>
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -209,17 +209,20 @@
             <div class="flex flex-wrap w-full">
                 <img class="lg:w-3/6 md:w-2/5 object-cover object-center rounded-lg md:mt-0 mt-12 flex-auto"
                     src="/img/steps.jpg" alt="step">
-                <div class="lg:w-2/6 md:w-2/5 md:pr-10 md:py-6 lg:ml-3 flex-auto">
+                <div class="lg:w-2/6 md:w-2/5 md:pr-10 md:py-6 md:ml-3 flex-auto mt-3 lg:mt-0">
                     <div class="flex relative pb-10">
                         <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
                             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                         </div>
                         <div
                             class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                             </svg>
+
                         </div>
                         <div class="flex-grow pl-4">
                             <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 1</h2>
@@ -233,11 +236,13 @@
                         </div>
                         <div
                             class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <circle cx="12" cy="5" r="3"></circle>
-                                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
                             </svg>
+
                         </div>
                         <div class="flex-grow pl-4">
                             <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STAP 2</h2>
