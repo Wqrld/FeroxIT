@@ -808,10 +808,6 @@ video {
   cursor: pointer;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -822,10 +818,6 @@ video {
 
 .content-start {
   align-content: flex-start;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-end {
@@ -1050,11 +1042,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1433,10 +1420,6 @@ video {
 
   .sm\:pr-10 {
     padding-right: 2.5rem;
-  }
-
-  .sm\:pr-16 {
-    padding-right: 4rem;
   }
 
   .sm\:text-left {

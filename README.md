@@ -1,6 +1,6 @@
 # Ferox IT website
 
-![afbeelding](https://i.wqrld.net/static/Linux_nhm.png)
+![afbeelding](https://i.wqrld.net/static/Games_S9I.png)
 
 ## Bouwen
 De website maakt gebruikt van tailwind. Om de stylesheets te bouwen dient u `npx tailwindcss --watch -i style.css -o dist/output.css` uit te voeren.

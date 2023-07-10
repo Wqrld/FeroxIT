@@ -1,2 +1,4 @@
 vendor/
 .env
+blog/
+node_modules/
